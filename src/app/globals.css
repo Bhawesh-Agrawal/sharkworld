@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -31,3 +33,12 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'Erode';
+  src: url('/fonts/Erode-Variable.ttf') format('ttf'),
+       url('/fonts/Erode-VariableItalic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
