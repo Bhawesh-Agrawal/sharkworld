@@ -19,7 +19,7 @@ const Navbar = async () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row justify-end items-center gap-[10px]">
+          <div className="flex flex-row justify-end items-center gap-[15px]">
             {/* Right hand navigation */}
             <div
               className="flex flex-row justify-end items-center md:gap-[35px]
@@ -68,7 +68,7 @@ const Navbar = async () => {
             items-center bg-[#E5383B] rounded-md hover:opacity-50"
             >
               {/* Shop Now */}
-              <button className="max-w-[100%]">Shop Now</button>
+              <button className="max-w-[100%] font-semibold text-[18px]">Shop Now</button>
             </div>
           </div>
         </header>

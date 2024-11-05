@@ -3,16 +3,16 @@
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Inter_36bd41';
+  font-family: '__Inter_d65c78';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
   src: url(/_next/static/media/55c55f0601d81cf3-s.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Inter_36bd41';
+  font-family: '__Inter_d65c78';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -21,7 +21,7 @@
 }
 /* greek-ext */
 @font-face {
-  font-family: '__Inter_36bd41';
+  font-family: '__Inter_d65c78';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -30,7 +30,7 @@
 }
 /* greek */
 @font-face {
-  font-family: '__Inter_36bd41';
+  font-family: '__Inter_d65c78';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -39,7 +39,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Inter_36bd41';
+  font-family: '__Inter_d65c78';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -48,23 +48,23 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Inter_36bd41';
+  font-family: '__Inter_d65c78';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
   src: url(/_next/static/media/6d93bde91c0c2823-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: '__Inter_36bd41';
+  font-family: '__Inter_d65c78';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
   src: url(/_next/static/media/a34f9d1faa5f3315-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Inter_Fallback_36bd41';src: local("Arial");ascent-override: 90.49%;descent-override: 22.56%;line-gap-override: 0.00%;size-adjust: 107.06%
-}.__className_36bd41 {font-family: '__Inter_36bd41', '__Inter_Fallback_36bd41';font-style: normal
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Inter_Fallback_d65c78';src: local("Arial");ascent-override: 90.49%;descent-override: 22.56%;line-gap-override: 0.00%;size-adjust: 107.06%
+}.__className_d65c78 {font-family: '__Inter_d65c78', '__Inter_Fallback_d65c78';font-style: normal
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
@@ -593,10 +593,6 @@ video {
 .hidden {
   display: none;
 }
-.size-10 {
-  width: 2.5rem;
-  height: 2.5rem;
-}
 .h-16 {
   height: 4rem;
 }
@@ -609,11 +605,11 @@ video {
 .h-\[2px\] {
   height: 2px;
 }
-.h-\[350px\] {
-  height: 350px;
-}
 .h-\[40px\] {
   height: 40px;
+}
+.h-\[450px\] {
+  height: 450px;
 }
 .h-\[45px\] {
   height: 45px;
@@ -623,15 +619,6 @@ video {
 }
 .h-\[92px\] {
   height: 92px;
-}
-.h-10 {
-  height: 2.5rem;
-}
-.h-20 {
-  height: 5rem;
-}
-.h-\[450px\] {
-  height: 450px;
 }
 .min-h-\[100vh\] {
   min-height: 100vh;
@@ -651,26 +638,17 @@ video {
 .w-\[1px\] {
   width: 1px;
 }
-.w-\[274px\] {
-  width: 274px;
-}
 .w-\[30px\] {
   width: 30px;
+}
+.w-\[334px\] {
+  width: 334px;
 }
 .w-\[90\%\] {
   width: 90%;
 }
 .w-full {
   width: 100%;
-}
-.w-10 {
-  width: 2.5rem;
-}
-.w-\[314px\] {
-  width: 314px;
-}
-.w-\[334px\] {
-  width: 334px;
 }
 .max-w-\[100\%\] {
   max-width: 100%;
@@ -705,20 +683,11 @@ video {
 .gap-\[10px\] {
   gap: 10px;
 }
-.gap-\[35px\] {
-  gap: 35px;
+.gap-\[15px\] {
+  gap: 15px;
 }
 .gap-\[5px\] {
   gap: 5px;
-}
-.gap-\[20px\] {
-  gap: 20px;
-}
-.gap-\[45px\] {
-  gap: 45px;
-}
-.gap-\[65px\] {
-  gap: 65px;
 }
 .gap-\[60px\] {
   gap: 60px;
@@ -748,10 +717,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
 .object-cover {
   object-fit: cover;
 }
@@ -774,14 +739,17 @@ video {
 .font-erode {
   font-family: Erode;
 }
+.text-\[18px\] {
+  font-size: 18px;
+}
 .text-\[20px\] {
   font-size: 20px;
 }
 .text-\[22px\] {
   font-size: 22px;
 }
-.text-\[24px\] {
-  font-size: 24px;
+.text-\[30px\] {
+  font-size: 30px;
 }
 .text-\[60px\] {
   font-size: 60px;
@@ -789,24 +757,8 @@ video {
 .text-\[9px\] {
   font-size: 9px;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-.text-\[50px\] {
-  font-size: 50px;
-}
-.text-\[32px\] {
-  font-size: 32px;
-}
-.text-\[30px\] {
-  font-size: 30px;
-}
 .font-semibold {
   font-weight: 600;
-}
-.font-\[50px\] {
-  font-weight: 50px;
 }
 .tracking-\[0\.4em\] {
   letter-spacing: 0.4em;
@@ -829,10 +781,6 @@ video {
 .text-\[\#F5F3F4\] {
   --tw-text-opacity: 1;
   color: rgb(245 243 244 / var(--tw-text-opacity));
-}
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 .opacity-90 {
   opacity: 0.9;
@@ -894,21 +842,12 @@ body {
     justify-content: center;
   }
 
-  .md\:gap-0 {
-    gap: 0px;
-  }
-
-  .md\:gap-\[35px\] {
-    gap: 35px;
-  }
-
   .md\:gap-\[10px\] {
     gap: 10px;
   }
 
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .md\:gap-\[35px\] {
+    gap: 35px;
   }
 
   .md\:px-5 {
@@ -921,10 +860,6 @@ body {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:gap-\[60px\] {
-    gap: 60px;
   }
 
   .lg\:gap-\[20px\] {
