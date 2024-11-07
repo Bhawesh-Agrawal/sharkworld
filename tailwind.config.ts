@@ -1,3 +1,4 @@
+import { Bona_Nova } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -15,7 +16,8 @@ const config: Config = {
       },
       fontFamily: {
         body : ["IM Fell Great Primer SC"],
-        erode : ["Erode"]
+        erode : ["Erode"],
+        Bonda : ["Bonda Nova"]
       }
     },
 
