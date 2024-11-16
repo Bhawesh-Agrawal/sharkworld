@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -35,18 +35,21 @@ body {
 }
 
 @font-face {
-  font-family: 'Erode';
-  src: url('/fonts/Erode-Variable.ttf') format('ttf'),
-       url('/fonts/Erode-VariableItalic.ttf') format('ttf');
+  font-family: "Erode";
+  src: url("/fonts/Erode-Variable.ttf") format("truetype"),
+    url("/fonts/Erode-VariableItalic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Bonda Nova';
-  src: url('/fonts/BondaNovaSC-Regular.ttf') format('ttf');
+  font-family: "Bonda Nova";
+  src: url("/fonts/BondaNovaSC-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-
+/* Custom clip-path for the curved shape */
+.clip-ellipse {
+  clip-path: ellipse(70% 100% at 50% 100%);
+}

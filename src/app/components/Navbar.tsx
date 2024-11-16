@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-center items-center bg-[#F5F3F4]">
       <div
-        className="w-[90%] h-[145px] m-0 p-0 flex flex-col 
+        className="w-[90%] h-[145px] m-0 p-2 flex flex-col 
       justify-start items-center font-[erode]"
       >
         <header className="flex flex-row justify-between items-center w-full">
@@ -24,9 +25,12 @@ const Navbar = () => {
             </div>
             <div>
               {/* Logo Subheading */}
-              <p className="text-[9px] tracking-[0.4em] text-[#161A1D]">
-                The Best Mate
-              </p>
+
+              <Link href="/curve">
+                <p className="text-[9px] tracking-[0.4em] text-[#161A1D]">
+                  The Best Mate
+                </p>
+              </Link>
             </div>
           </div>
           <div className="flex flex-row justify-end items-center gap-[15px]">
