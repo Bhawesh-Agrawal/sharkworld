@@ -53,3 +53,36 @@ body {
 .clip-ellipse {
   clip-path: ellipse(70% 100% at 50% 100%);
 }
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 6s ease infinite;
+}
+
+.animate-gradient-x-y {
+  background-size: 200% 200%;
+  animation: gradient-x 6s ease infinite;
+  animation-delay: 6s;
+}
+
+.animate-gradient-xy {
+  background-size: 200% 200%;
+  animation: gradient-x 6s ease infinite;
+}
+
+.animate-gradient-x-y-z {
+  background-size: 200% 200%;
+  animation: gradient-x 6s ease infinite;
+}

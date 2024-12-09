@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <AppRouterCacheProvider>
           <Navbar />
-          <main className="bg-[#F5F3F4] w-[100%] flex flex-col justify-start items-center min-h-[100vh] font-erode">
+          <main className="bg-[#030F26] w-[100%] flex flex-col justify-start items-center min-h-[100vh] font-erode">
             {children}
           </main>
         </AppRouterCacheProvider>

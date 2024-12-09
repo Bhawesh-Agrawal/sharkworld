@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useLayoutEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Card from "./Card"; // Assuming Card is your component
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,6 +7,7 @@ import { duration } from "@mui/material";
 
 const CardsSwipe = () => {
   const cardContainerRef = useRef<HTMLDivElement>(null); // Main container for cards
+  const [isMobile, setisMobile] = useState(false);
   const cardRefs = [
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
@@ -14,7 +15,20 @@ const CardsSwipe = () => {
     useRef<HTMLDivElement>(null),
   ];
 
-  const isMobile = window.innerWidth <= 768; // Mobile device detection
+  useEffect(() => {
+    const isMobileCheck = () => {
+      if (typeof window !== "undefined") {
+        setisMobile(window.innerWidth <= 768);
+      }
+    };
+
+    isMobileCheck();
+    window.addEventListener("resize", isMobileCheck);
+
+    return () => {
+      window.removeEventListener("resize", isMobileCheck);
+    };
+  }, []);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -69,7 +83,7 @@ const CardsSwipe = () => {
   return (
     <div
       ref={cardContainerRef}
-      className="flex flex-col items-center gap-16 bg-[#161A1D] w-full py-20 md:py-40 h-[240vh] md:h-[300vh]"
+      className="flex flex-col items-center gap-16 bg-[#161A1D] w-full py-20 md:py-40 h-fit md:h-[300vh] rounded-[20px] overflow-x-hidden"
       style={{ overflow: "hidden" }} // Prevent overflow outside container
     >
       <Card

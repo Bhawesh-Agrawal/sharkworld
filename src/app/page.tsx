@@ -4,6 +4,9 @@ import StarIcon from "@mui/icons-material/Star";
 import PriceCheckIcon from "@mui/icons-material/PriceCheck";
 import Promotionbrd from "./components/Promotion_brd";
 import CardsSwipe from "./components/CardsSwipe";
+import Product from "./components/Product";
+import Visual from "./components/Visual";
+import Footer from "./components/Footer";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -16,7 +19,7 @@ export default function Home() {
 
   return (
     <div className="w-[90%]">
-      <div className="w-full flex flex-col lg:flex-row items-center justify-center relative z-0 bg-gradient-to-r from-blue-500 to-red-500 py-10 rounded-[20px]">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center relative z-0 py-10 rounded-[20px]">
         <div className="w-[90%] lg:w-[40%] flex flex-col items-center justify-start border-t-2 border-l-2 border-r-2 rounded-[20px] h-[842px] border-black border-opacity-20">
           <div className="pt-8 md:pt-12">
             <p className="text-[#F5F3F4] font-semibold text-[40px] whitespace-nowrap  max-w-[90%] lg:text-[80px] font-Bonda">
@@ -28,14 +31,14 @@ export default function Home() {
               Discover the perfect writing experience with{" "}
               <span className="font-bold">SHARK ENTERPRISES</span>, your trusted
               partner in quality stationery. We take pride in bringing you the
-              <span className="text-black font-semibold">
+              <span className="text-red-600 font-semibold">
                 {" "}
                 finest selection
               </span>{" "}
               of pens and writing instruments, featuring renowned brands like
               Pentonic, Kangaroo, Monami, and Snowman. Our products are crafted
               to provide{" "}
-              <span className="text-black font-semibold">
+              <span className="text-red-600 font-semibold">
                 smooth, reliable, and enjoyable
               </span>{" "}
               writing for all your needs, from professional workspaces to
@@ -98,21 +101,11 @@ export default function Home() {
       <div className="h-[92px] w-full"></div>
       <CardsSwipe />
       <div className="h-[92px] w-full"></div>
+      <Product />
       <div className="h-[92px] w-full"></div>
+      <Visual />
       <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
-      <div className="h-[92px] w-full"></div>
+      <Footer />
     </div>
   );
 }

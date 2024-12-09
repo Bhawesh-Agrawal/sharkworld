@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-center items-center bg-[#F5F3F4]">
+    <div className="flex justify-center items-center bg-[#030F26]">
       <div
         className="w-[90%] h-[145px] m-0 p-2 flex flex-col 
       justify-start items-center font-[erode]"
@@ -19,7 +19,7 @@ const Navbar = () => {
         <header className="flex flex-row justify-between items-center w-full">
           <div className="flex flex-col justify-center items-center">
             {/* Logo Div*/}
-            <div>
+            <div className="pt-6">
               {/* Logo */}
               <img className="w-[100px] h-[100px]" src="/logo.jpg" alt="logo" />
             </div>
@@ -46,9 +46,9 @@ const Navbar = () => {
               md:hidden cursor-pointer"
                 onClick={toggleDropDown}
               >
-                <div className="w-[30px] h-[2px] bg-black"></div>
-                <div className="w-[30px] h-[2px] bg-black"></div>
-                <div className="w-[30px] h-[2px] bg-black"></div>
+                <div className="w-[30px] h-[2px] bg-white"></div>
+                <div className="w-[30px] h-[2px] bg-white"></div>
+                <div className="w-[30px] h-[2px] bg-white"></div>
               </div>
               {/* Drop box */}
               {open && (
