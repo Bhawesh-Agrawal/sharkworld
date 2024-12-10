@@ -21,7 +21,7 @@ const Navbar = () => {
             {/* Logo Div*/}
             <div className="pt-6">
               {/* Logo */}
-              <img className="w-[100px] h-[100px]" src="/logo.jpg" alt="logo" />
+              <img className="w-[100px] h-[100px]" src="/Logo.jpg" alt="logo" />
             </div>
             <div>
               {/* Logo Subheading */}
