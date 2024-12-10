@@ -5,7 +5,7 @@ const Visual = () => {
     <div>
       <div className="h-[200vh] lg:h-fit bg-[#161A1D] rounded-[20px] w-full flex flex-col">
         {/* Column 1 */}
-        <div className="flex flex-col lg:flex-row w-full px-10 py-5 h-[75.6vh] justify-between gap-5 lg:gap-0">
+        <div className="flex flex-col lg:flex-row w-full px-10 py-5 h-[75.6vh] lg:h-[50.6vh] justify-between gap-5 lg:gap-0">
           {/* Box 1 */}
           <div
             className="w-full lg:w-[68.5%] rounded-[20px] h-full bg-gradient-to-r
@@ -38,7 +38,7 @@ const Visual = () => {
           </div>
         </div>
         {/* Column 2 */}
-        <div className="flex flex-col lg:flex-row w-full px-10 py-5  h-[75.6vh] justify-between gap-5 lg:gap-0">
+        <div className="flex flex-col lg:flex-row w-full px-10 py-5 h-[76.6vh] lg:h-[35.6vh] justify-between gap-5 lg:gap-0">
           {/* Box 3 */}
           <div
             className="w-full lg:w-[31.7%] rounded-[20px] h-full bg-gradient-to-r
@@ -80,12 +80,12 @@ const Visual = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row w-full px-10 py-5  h-[75.6vh] justify-between gap-5 lg:gap-0">
+        <div className="flex flex-col lg:flex-row w-full px-10 py-5  h-[75.6vh] lg:h-[55.6vh] justify-between gap-5 lg:gap-0">
           <div
             className="w-full lg:w-[28.5%] rounded-[20px] h-full bg-gradient-to-r 
-          from-red-500 via-purple-500 to-blue-500 animate-gradient-x shadow-[0_8px_30px_rgba(0,0,0,1)] lg:pt-16 flex flex-col justify-center items-center lg:justify-start"
+          from-red-500 via-purple-500 to-blue-500 animate-gradient-x shadow-[0_8px_30px_rgba(0,0,0,1)] lg:pt-10 flex flex-col justify-center items-center lg:justify-start"
           >
-            <p className="text-white text-[30px] font-bold px-5 pt-3 text-nowrap 2xl:text-[60px] lg:text-[30px]">
+            <p className="text-white text-[30px] font-bold px-5 text-nowrap 2xl:text-[60px] lg:text-[30px]">
               Why Choose Us?
             </p>
             <p className="text-blue-950 text-[18px] px-5 pt-1 font-semibold 2xl:text-[30px] lg:text-[25px] lg:pt-5">

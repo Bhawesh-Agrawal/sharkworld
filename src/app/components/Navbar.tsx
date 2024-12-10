@@ -79,12 +79,6 @@ const Navbar = () => {
                       <div className="w-[200px] h-[2px] bg-gray-500"></div>
                       <div>
                         <p className="text-[#B1A7A6] text-[20px] font-semibold hover:opacity-50 cursor-pointer">
-                          Cart
-                        </p>
-                      </div>
-                      <div className="w-[200px] h-[2px] bg-gray-500"></div>
-                      <div>
-                        <p className="text-[#B1A7A6] text-[20px] font-semibold hover:opacity-50 cursor-pointer">
                           Login
                         </p>
                       </div>
@@ -94,7 +88,7 @@ const Navbar = () => {
                       >
                         {/* Shop Now */}
                         <button className="max-w-[100%] font-semibold text-[22px] text-white">
-                          Shop Now
+                          View Product
                         </button>
                       </div>
                     </div>
@@ -114,12 +108,6 @@ const Navbar = () => {
                 About
               </p>
               <p
-                className="text-[#B1A7A6] text-[20px] font-semibold hidden
-               md:block hover:opacity-50 cursor-pointer"
-              >
-                Cart
-              </p>
-              <p
                 className="text-[20px] font-semibold text-[#E5383B] 
               hidden md:block hover:opacity-50 cursor-pointer"
               >
@@ -135,7 +123,7 @@ const Navbar = () => {
             >
               {/* Shop Now */}
               <button className="max-w-[100%] font-semibold text-[18px]">
-                Shop Now
+                View Product
               </button>
             </div>
           </div>

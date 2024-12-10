@@ -97,7 +97,7 @@ const CardsSwipe = () => {
       <Card
         ref={cardRefs[1]}
         image="/Card2.webp"
-        description="Pentonic pens undergo rigorous testing to ensure smooth writing, consistent ink flow, and long-lasting performance."
+        description="Pentonic delivers exceptional value for money. Our pens are competitively priced, making them a reliable and budget-friendly."
         color="#D3D3D3"
         textpos="right"
         textcol="black"
@@ -105,7 +105,7 @@ const CardsSwipe = () => {
       <Card
         ref={cardRefs[2]}
         image="/Card3.png"
-        description="Pentonic pens undergo rigorous testing to ensure smooth writing, consistent ink flow, and long-lasting performance."
+        description="One of the hallmarks of the Pentonic brand is its wide variety of writing instruments."
         color="#660708"
         textpos="left"
         textcol="white"
@@ -113,7 +113,7 @@ const CardsSwipe = () => {
       <Card
         ref={cardRefs[3]}
         image="/pentonic_ball3.webp"
-        description="Pentonic pens undergo rigorous testing to ensure smooth writing, consistent ink flow, and long-lasting performance."
+        description="Ergonomically designed grips and smooth ink ensure comfortable writing experiences, even during extended writing sessions."
         color="#D3D3D3"
         textpos="right"
         textcol="black"

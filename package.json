@@ -10,17 +10,17 @@
   },
   "dependencies": {
     "@emotion/cache": "^11.13.1",
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@mui/icons-material": "^6.1.2",
-    "@mui/material": "^6.1.2",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.1.10",
+    "@mui/material": "^6.1.10",
     "@mui/material-nextjs": "^6.0.2",
     "@next/font": "^14.2.7",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.21",
     "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "shadcn-lib": "^0.2.0"
   },
   "devDependencies": {
