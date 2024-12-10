@@ -88,7 +88,7 @@ const CardsSwipe = () => {
     >
       <Card
         ref={cardRefs[0]}
-        image="/Card1.png"
+        image="https://www.playbook.com/s/bhawesh-agrawal/xLQWx7JRwem9HSbabtxWGGxy?assetToken=2SgxpuY4icyVaoN4Vbcsz6E6"
         description="Pentonic pens undergo rigorous testing to ensure smooth writing, consistent ink flow, and long-lasting performance."
         color="#660708"
         textpos="left"
@@ -96,7 +96,7 @@ const CardsSwipe = () => {
       />
       <Card
         ref={cardRefs[1]}
-        image="/Card2.webp"
+        image="https://www.playbook.com/s/bhawesh-agrawal/ehQSuAKm2eXnp3UC7V8ez7Hg?assetToken=LrT6N4V2yE5AEejTbeNB2oug"
         description="Pentonic delivers exceptional value for money. Our pens are competitively priced, making them a reliable and budget-friendly."
         color="#D3D3D3"
         textpos="right"
@@ -104,7 +104,7 @@ const CardsSwipe = () => {
       />
       <Card
         ref={cardRefs[2]}
-        image="/Card3.png"
+        image="https://www.playbook.com/s/bhawesh-agrawal/ehQSuAKm2eXnp3UC7V8ez7Hg?assetToken=LrT6N4V2yE5AEejTbeNB2oug"
         description="One of the hallmarks of the Pentonic brand is its wide variety of writing instruments."
         color="#660708"
         textpos="left"
@@ -112,7 +112,7 @@ const CardsSwipe = () => {
       />
       <Card
         ref={cardRefs[3]}
-        image="/pentonic_ball3.webp"
+        image="https://www.playbook.com/s/bhawesh-agrawal/LTrabNcpRv6kwheKYttPt7Jm?assetToken=KF9wvFwebVCXdfYfxBciY172"
         description="Ergonomically designed grips and smooth ink ensure comfortable writing experiences, even during extended writing sessions."
         color="#D3D3D3"
         textpos="right"
