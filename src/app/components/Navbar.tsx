@@ -21,11 +21,7 @@ const Navbar = () => {
             {/* Logo Div*/}
             <div className="pt-6">
               {/* Logo */}
-              <img
-                className="w-[100px] h-[100px]"
-                src="https://www.playbook.com/s/bhawesh-agrawal/oo3j8msJPJzU4TCoG8jr8vuW?assetToken=Yb2RpFHFn44ftghoazgHsSXz"
-                alt="logo"
-              />
+              <img className="w-[100px] h-[100px]" src="/logo.jpg" alt="logo" />
             </div>
             <div>
               {/* Logo Subheading */}
