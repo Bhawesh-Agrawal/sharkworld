@@ -14,7 +14,7 @@ const Product = () => {
           >
             <img
               className="object-cover w-full h-full rounded-2xl group-hover:opacity-40 transition-opacity duration-500 ease-in-out"
-              src="/pen_holder.png"
+              src="/Pen_holder.png"
               alt="Pen Holder"
             />
             <p
