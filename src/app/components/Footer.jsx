@@ -12,11 +12,7 @@ const Footer = () => {
         {/* Logo with company name */}
         <div className="flex flex-col items-left justify-left gap-5 lg:w-[38%]">
           <div className="flex flex-row items-center justify-left gap-5">
-            <img
-              className="size-16"
-              src="https://www.playbook.com/s/bhawesh-agrawal/oo3j8msJPJzU4TCoG8jr8vuW?assetToken=Yb2RpFHFn44ftghoazgHsSXz"
-              alt="Logo"
-            />
+            <img className="size-16" src="/Logo.jpg" alt="Logo" />
             <p className="font-bold text-[25px]">Shark Enterprises Pvt. Ltd.</p>
           </div>
           <div className="flex items-center justify-center">
