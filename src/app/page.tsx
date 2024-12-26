@@ -106,8 +106,6 @@ export default function Home() {
       <Visual />
       <div className="h-[92px] w-full"></div>
       <div className="h-[92px] w-full"></div>
-      <Footer />
-      <div className="h-[92px] w-full"></div>
     </div>
   );
 }

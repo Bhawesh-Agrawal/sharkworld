@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,9 @@ export default function RootLayout({
           <main className="bg-[#030F26] w-[100%] flex flex-col justify-start items-center min-h-[100vh] font-erode">
             {children}
           </main>
+          <div className="h-[92px] w-full bg-[#030F26]"></div>
+          <Footer />
+          <div className="h-[92px] w-full bg-[#030F26]"></div>
         </AppRouterCacheProvider>
       </body>
     </html>

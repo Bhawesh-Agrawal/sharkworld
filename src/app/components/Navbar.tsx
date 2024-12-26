@@ -95,18 +95,22 @@ const Navbar = () => {
                   </div>
                 </div>
               )}
-              <p
-                className="text-[#B1A7A6] text-[20px] font-semibold hidden 
+              <Link href="/..">
+                <p
+                  className="text-[#B1A7A6] text-[20px] font-semibold hidden 
               md:block hover:opacity-50 cursor-pointer"
-              >
-                Home
-              </p>
-              <p
-                className="text-[#B1A7A6] text-[20px] font-semibold hidden 
+                >
+                  Home
+                </p>
+              </Link>
+              <Link href="/About">
+                <p
+                  className="text-[#B1A7A6] text-[20px] font-semibold hidden 
               md:block hover:opacity-50 cursor-pointer"
-              >
-                About
-              </p>
+                >
+                  About
+                </p>
+              </Link>
               <p
                 className="text-[20px] font-semibold text-[#E5383B] 
               hidden md:block hover:opacity-50 cursor-pointer"

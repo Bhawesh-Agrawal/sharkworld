@@ -6,9 +6,9 @@ import EmailIcon from "@mui/icons-material/Email";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="w-full h-[1px] bg-slate-500 mb-20"></div>
-      <div className="w-full flex flex-col lg:flex-row gap-14">
+    <div className="bg-[#030F26]">
+      <div className="w-full h-[1px] mb-20"></div>
+      <div className="w-[90%] flex flex-col lg:flex-row gap-14 justify-center ml-[5%]">
         {/* Logo with company name */}
         <div className="flex flex-col items-left justify-left gap-5 lg:w-[38%]">
           <div className="flex flex-row items-center justify-left gap-5">
@@ -61,10 +61,10 @@ const Footer = () => {
           <p className="text-[20px]">Contact: +977-9xxxxxxxxx</p>
         </div>
       </div>
-      <p className="pt-10 font-thin text-gray-500">
+      <p className="pt-10 font-thin text-gray-500 ml-[5%]">
         Copyright © 2024 Shark Enterprises | Bhotebahal, Kathmandu-3, 44600
       </p>
-      <span className="text-red-600 hover:cursor-pointer hover:opacity-70 transition-all duration-2000">
+      <span className="text-red-600 hover:cursor-pointer hover:opacity-70 transition-all duration-2000 ml-[5%]">
         Terms & Conditions
       </span>
     </div>
