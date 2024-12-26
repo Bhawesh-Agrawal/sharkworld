@@ -65,17 +65,21 @@ const Navbar = () => {
                       <div className="w-[30px] h-[2px] bg-black -rotate-45"></div>
                     </div>
                     <div className="flex flex-col justify-center items-center pt-10 gap-6">
-                      <div>
-                        <p className="text-[#B1A7A6] text-[20px] font-semibold hover:opacity-50 cursor-pointer">
-                          Home
-                        </p>
-                      </div>
+                      <Link href="/..">
+                        <div>
+                          <p className="text-[#B1A7A6] text-[20px] font-semibold hover:opacity-50 cursor-pointer">
+                            Home
+                          </p>
+                        </div>
+                      </Link>
                       <div className="w-[200px] h-[2px] bg-gray-500"></div>
-                      <div>
-                        <p className="text-[#B1A7A6] text-[20px] font-semibold hover:opacity-50 cursor-pointer">
-                          About
-                        </p>
-                      </div>
+                      <Link href="/About">
+                        <div>
+                          <p className="text-[#B1A7A6] text-[20px] font-semibold hover:opacity-50 cursor-pointer">
+                            About
+                          </p>
+                        </div>
+                      </Link>
                       <div className="w-[200px] h-[2px] bg-gray-500"></div>
                       <div>
                         <p className="text-[#B1A7A6] text-[20px] font-semibold hover:opacity-50 cursor-pointer">

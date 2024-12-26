@@ -5,9 +5,9 @@ import TravelExploreIcon from "@mui/icons-material/TravelExplore";
 export default function About() {
   return (
     <div className="flex flex-col w-[90%]">
-      <div className="w-full mx-auto flex flex-row items-start justify-between">
+      <div className="w-full mx-auto flex flex-col lg:flex-row items-start justify-between">
         {/* Text Content */}
-        <div className="w-[65%]">
+        <div className="w-full lg:w-[65%]">
           <div className="flex flex-col items-start justify-start w-full mt-10">
             <div className="w-full flex flex-col">
               <p className="text-white font-bold text-[30px]">
@@ -130,30 +130,30 @@ export default function About() {
         </div>
 
         {/* Image Section */}
-        <div className="w-[30%] flex flex-col relative gap-5">
+        <div className="w-full lg:w-[30%] flex flex-col relative gap-5 mt-10 mb-10 lg:mb-0 lg:mt-0">
           <img
             src="/office 1.jpg"
             alt="Office 1"
-            className="w-[80%] relative left-[-20px] rounded-md"
+            className="w-full lg:w-[80%] relative lg:left-[-20px] rounded-md"
           />
           <img
             src="/office building.jpg"
             alt="Office Building"
-            className="w-[80%] relative right-[-40px] top-[-80px] rounded-md"
+            className="w-full lg:w-[80%] relative lg:right-[-40px] Lg:top-[-80px] rounded-md"
           />
           <img
             src="/office 2.jpg"
             alt="Office 2"
-            className="w-[80%] relative left-[-60px] top-[-160px] rounded-md"
+            className="w-full lg:w-[80%] relative lg:left-[-60px] lg:top-[-160px] rounded-md"
           />
           <img
             src="/office 3.jpg"
             alt="Office 3"
-            className="w-[80%] relative right-[-80px] top-[-260px] rounded-md"
+            className="w-full lg:w-[80%] relative lg:right-[-80px] lg:top-[-260px] rounded-md"
           />
         </div>
       </div>
-      <div className="bg-gray-800 p-10 rounded-lg shadow-lg w-[90%] mx-auto">
+      <div className="bg-gray-800 p-10 rounded-lg shadow-lg w-[90%] mx-auto mt-10">
         <div className="text-white text-[60px] font-bold text-center">
           Contact <span className="font-bold text-red-400">Us</span>
         </div>
