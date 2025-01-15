@@ -1,14 +1,33 @@
 "use client";
 
+import { jwtDecode } from "jwt-decode";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { use, useState, useEffect } from "react";
+
+interface DecodedToken {
+  username: string;
+  exp?: number; // Token expiry time (optional)
+}
 
 const Navbar = () => {
   const [open, setopen] = useState(false);
+  const [user, setUser] = useState<DecodedToken | null>(null);
 
   const toggleDropDown = () => {
     setopen(!open);
   };
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      try {
+        const decoded = jwtDecode<DecodedToken>(token); // Decode token with type
+        setUser(decoded); // Set the decoded user information
+      } catch (error) {
+        console.error("Error decoding token:", error);
+      }
+    }
+  }, []);
 
   return (
     <div className="flex justify-center items-center bg-[#030F26]">
@@ -81,11 +100,24 @@ const Navbar = () => {
                         </div>
                       </Link>
                       <div className="w-[200px] h-[2px] bg-gray-500"></div>
-                      <div>
-                        <p className="text-[#B1A7A6] text-[20px] font-semibold hover:opacity-50 cursor-pointer">
-                          Login
-                        </p>
-                      </div>
+                      {user ? (
+                        <Link href="/Profile">
+                          <div>
+                            <p className="text-[#B1A7A6] text-[20px] font-semibold hover:opacity-50 cursor-pointer">
+                              {user.username}
+                            </p>
+                          </div>
+                        </Link>
+                      ) : (
+                        <Link href="/Login">
+                          <div>
+                            <p className="text-[#B1A7A6] text-[20px] font-semibold hover:opacity-50 cursor-pointer">
+                              Login
+                            </p>
+                          </div>
+                        </Link>
+                      )}
+
                       <div
                         className="w-[160px] h-[55px] flex justify-center 
                   items-center bg-[#E5383B] rounded-md hover:opacity-50 mt-10"
@@ -115,14 +147,27 @@ const Navbar = () => {
                   About
                 </p>
               </Link>
-              <p
-                className="text-[20px] font-semibold text-[#E5383B] 
+              {user ? (
+                <Link href="/Profile">
+                  <p
+                    className="text-[20px] font-semibold text-[#E5383B] 
               hidden md:block hover:opacity-50 cursor-pointer"
-              >
-                Login
-              </p>
+                  >
+                    {user.username}
+                  </p>
+                </Link>
+              ) : (
+                <Link href="/Login">
+                  <p
+                    className="text-[20px] font-semibold text-[#E5383B] 
+              hidden md:block hover:opacity-50 cursor-pointer"
+                  >
+                    Login
+                  </p>
+                </Link>
+              )}
             </div>
-            <div className="w-[1px] h-[45px] bg-[#161A1D]">
+            <div className="w-[1px] h-[45px] bg-gray-400">
               {/* Seperator */}
             </div>
             <div
@@ -130,7 +175,7 @@ const Navbar = () => {
             items-center bg-[#E5383B] rounded-md hover:opacity-50"
             >
               {/* Shop Now */}
-              <button className="max-w-[100%] font-semibold text-[18px]">
+              <button className="max-w-[100%] font-semibold text-[18px] text-white">
                 View Product
               </button>
             </div>
