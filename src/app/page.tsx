@@ -16,11 +16,11 @@ export default function Home() {
       const locomotiveScroll = new LocomotiveScroll();
     })();
   }, []);
-
+  
   return (
     <div className="w-[90%]">
       <div className="w-full flex flex-col lg:flex-row items-center justify-center relative z-0 py-10 rounded-[20px]">
-        <div className="w-[90%] lg:w-[40%] flex flex-col items-center justify-start border-t-2 border-l-2 border-r-2 rounded-[20px] h-[842px] border-black border-opacity-20">
+        <div className="w-[90%] lg:w-[60%] flex flex-col items-center justify-start rounded-[20px] h-[842px] border-black border-opacity-20">
           <div className="pt-8 md:pt-12">
             <p className="text-[#F5F3F4] font-semibold text-[40px] whitespace-nowrap  max-w-[90%] lg:text-[80px] font-Bonda">
               The Best Mate
@@ -31,14 +31,14 @@ export default function Home() {
               Discover the perfect writing experience with{" "}
               <span className="font-bold">SHARK ENTERPRISES</span>, your trusted
               partner in quality stationery. We take pride in bringing you the
-              <span className="text-red-600 font-semibold">
+              <span className="text-red-400 font-semibold">
                 {" "}
                 finest selection
               </span>{" "}
               of pens and writing instruments, featuring renowned brands like
               Pentonic, Kangaroo, Monami, and Snowman. Our products are crafted
               to provide{" "}
-              <span className="text-red-600 font-semibold">
+              <span className="text-red-400 font-semibold">
                 smooth, reliable, and enjoyable
               </span>{" "}
               writing for all your needs, from professional workspaces to
@@ -52,23 +52,22 @@ export default function Home() {
           <div className="pt-6 md:pt-10">
             <button
               className="relative w-52 h-16 bg-[#E5383B] 
-        rounded-lg hover:opacity-80"
+        rounded-lg hover:opacity-90 hover:scale-105 transition-all duration-300"
             >
-              <p className="max-w-[100%] text-[22px] tracking-widest 2xl:text-[26px]">
+              <p className="max-w-[100%] text-[22px] tracking-widest 2xl:text-[26px] text-white font-semibold">
                 Shop Now
               </p>
             </button>
           </div>
         </div>
-        <div className="w-[50%] hidden lg:block">
+        <div className="w-[40%] hidden lg:block">
           <img
             className="rounded-[20px] h-[842px] w-full object-contain"
-            src="/design.png"
+            src="/pen-illustration.png"
             alt="Poster"
           />
         </div>
       </div>
-      <div className="h-[92px] w-full"></div>
       <div className="grid grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 gap-[10px] md:gap-[10px] md:px-5 lg:gap-[20px] 2xl:gap-[40px] max-w-full">
         <div className="flex flex-col justify-center items-center gap-[60px] bg-[#161A1D] h-[450px] w-full rounded-[20px] opacity-90">
           <GroupsIcon

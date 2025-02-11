@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Promotionbrd = () => {
   const [color, setcolorchoice] = useState(0);
@@ -14,6 +14,14 @@ const Promotionbrd = () => {
       return "./pentonic_ball3.webp";
     }
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setcolorchoice((prevColor) => (prevColor + 1) % 3);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div>
